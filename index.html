@@ -4,86 +4,340 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fresh Farm Gur • Pure Handmade Desi Gur • Farm to Table</title>
-  <meta name="description" content="Pure, handmade desi gur — chemical-free, traditionally crafted from our sugarcane fields and delivered fresh to your home. Pre-book today on WhatsApp.">
+  <meta name="description" content="Pure, handmade desi gur — chemical-free, traditionally crafted from our sugarcane fields and delivered fresh to your home. Pay via UPI & get 25% off. Cash on delivery available.">
+  <meta name="keywords" content="desi gur, jaggery, chemical-free jaggery, farm to table, jaggery powder, peanut chikki, western UP, organic jaggery">
+  <link rel="canonical" href="https://freshfarmgur.food/">
+  <meta property="og:title" content="Fresh Farm Gur • Pure Handmade Desi Gur">
+  <meta property="og:description" content="Farm-to-table jaggery. Pay via UPI & get 25% off. COD available.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://freshfarmgur.food/">
+  <meta property="og:image" content="https://freshfarmgur.food/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#8a5a2b">
+  <link rel="preload" as="image" href="/assets/hero.jpg" imagesrcset="/assets/hero.jpg 1600w" imagesizes="(max-width: 768px) 100vw, 50vw">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8WCXWGJ91W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8WCXWGJ91W');
+  </script>
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config={theme:{extend:{colors:{gur:'#c27a34',cane:'#76a857',earth:'#8a5a2b'}}}};</script>
-  <link rel="manifest" href="/assets/manifest.webmanifest">
-  <script defer src="/assets/script.js"></script>
+  <style>
+    .grain{background-image: radial-gradient(rgba(0,0,0,.04) 1px, transparent 1px);background-size:4px 4px;}
+    .shadow-soft{box-shadow:0 10px 25px rgba(0,0,0,.12);}
+    .stroke-title{text-shadow:0 1px 0 rgba(0,0,0,.15);}
+  </style>
+
+  <!-- Organization / Product structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Fresh Farm Gur",
+    "url":"https://freshfarmgur.food/",
+    "logo":"https://freshfarmgur.food/assets/logo.svg",
+    "sameAs":["https://instagram.com/freshfarmgur"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"Desi Gur (Jaggery)",
+    "brand":"Fresh Farm Gur",
+    "image":["https://freshfarmgur.food/assets/hero.jpg"],
+    "description":"Pure handmade jaggery, chemical-free, farm to table.",
+    "offers":{"@type":"Offer","price":"149.00","priceCurrency":"INR","availability":"https://schema.org/InStock"}
+  }
+  </script>
 </head>
-<body class="bg-[#fbf7f2] text-stone-800">
+<body class="bg-[#fbf7f2] text-stone-800 selection:bg-gur/20">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-white px-3 py-2 rounded-md border">Skip to content</a>
+
   <header class="sticky top-0 z-50 bg-[#fbf7f2]/90 backdrop-blur border-b border-stone-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-      <a href="#" class="flex items-center gap-3">
+      <a href="#" class="flex items-center gap-3" aria-label="Fresh Farm Gur home">
         <img src="/assets/logo.svg" alt="Fresh Farm Gur logo" class="w-9 h-9">
         <span class="font-semibold text-lg">Fresh Farm Gur</span>
       </a>
-      <a href="https://wa.me/+918859820935?text=Hi%20I%20want%20to%20pre-book%20Fresh%20Farm%20Gur"
-         class="inline-flex items-center gap-2 bg-earth text-white px-4 py-2 rounded-xl hover:bg-[#6f4724]">
-        <img src="/assets/whatsapp.svg" class="w-5 h-5" alt=""> Pre-book
-      </a>
+      <nav class="hidden md:flex gap-6 text-sm" aria-label="Primary">
+        <a href="#why" class="hover:text-earth">Why Us</a>
+        <a href="#products" class="hover:text-earth">Products</a>
+        <a href="#process" class="hover:text-earth">Process</a>
+        <a href="#faq" class="hover:text-earth">FAQ</a>
+        <a href="#contact" class="hover:text-earth">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="https://wa.me/918859820935?text=Hi%20I%20want%20to%20pre-book%20Fresh Farm Gur"
+           class="inline-flex items-center gap-2 bg-earth text-white px-4 py-2 rounded-xl hover:bg-[#6f4724] shadow-soft" aria-label="Pre-book on WhatsApp">
+          Pre-book
+        </a>
+        <a href="https://instagram.com/freshfarmgur" target="_blank" rel="noopener" class="hidden sm:inline-block px-3 py-2 text-sm border rounded-xl hover:bg-white">Instagram</a>
+      </div>
     </div>
   </header>
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 gap-10 items-center">
-    <div>
-      <h1 class="text-4xl md:text-6xl font-extrabold">Pure, Handmade <span class="text-earth">Desi Gur</span></h1>
-      <p class="mt-6 text-lg text-stone-700">Traditional jaggery crafted without chemicals from our own sugarcane.</p>
-      <form id="orderForm" class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3 bg-white/70 border border-stone-200 rounded-2xl p-3">
-        <input required name="name" placeholder="Your name" class="px-4 py-3 rounded-xl border border-stone-200" />
-        <input required name="qty" type="number" min="1" step="1" placeholder="Qty (kg)" class="px-4 py-3 rounded-xl border border-stone-200" />
-        <button class="bg-gur text-white rounded-xl px-4 py-3 hover:bg-[#a5652d]">Pre-book on WhatsApp</button>
-      </form>
-      <p class="text-sm text-stone-600 mt-2">No payment now. We confirm on WhatsApp.</p>
-    </div>
-    <div>
-      <img src="/assets/hero.jpg" alt="Handmade desi gur" class="rounded-3xl border border-stone-200">
+
+  <main id="main">
+  <section class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight stroke-title">
+          Pure, Handmade <span class="text-earth">Desi Gur</span><br>
+          <span class="text-cane">Farmer → Table</span>
+        </h1>
+        <p class="mt-6 text-lg text-stone-700">
+          Traditional jaggery crafted without chemicals from our own sugarcane. <b>Pay via UPI & get 25% off</b> or choose <b>Cash on Delivery</b>.
+        </p>
+
+        <form id="orderForm" class="mt-6 grid grid-cols-1 sm:grid-cols-4 gap-3 bg-white/70 border border-stone-200 rounded-2xl p-3">
+          <input required name="name" placeholder="Your name" class="px-4 py-3 rounded-xl border border-stone-200" />
+          <input required name="qty" type="number" min="1" step="1" placeholder="Qty (kg)" class="px-4 py-3 rounded-xl border border-stone-200" />
+          <select name="pay" class="px-4 py-3 rounded-xl border border-stone-200">
+            <option value="UPI">UPI (25% Off)</option>
+            <option value="COD">Cash on Delivery</option>
+          </select>
+          <button class="bg-gur text-white rounded-xl px-4 py-3 hover:bg-[#a5652d]">Continue</button>
+        </form>
+        <p class="text-xs text-stone-600 mt-2">No payment collected here. We confirm via WhatsApp with UPI link/COD details.</p>
+
+        <div class="mt-6 flex items-center gap-2 text-sm">
+          <span class="inline-flex items-center bg-green-100 text-green-900 px-3 py-1 rounded-full">UPI 25% OFF</span>
+          <span class="inline-flex items-center bg-stone-100 text-stone-900 px-3 py-1 rounded-full">COD Available</span>
+          <span class="inline-flex items-center bg-amber-100 text-amber-900 px-3 py-1 rounded-full">Seasonal Fresh</span>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="/assets/hero.jpg" alt="Handmade desi gur in rustic bowl" class="rounded-3xl shadow-soft border border-stone-200" loading="eager">
+        <div class="absolute -bottom-6 -right-6 bg-white/80 backdrop-blur p-4 rounded-2xl border border-stone-200">
+          <p class="font-semibold">Next dispatch:</p>
+          <p class="text-earth font-bold text-lg" id="dispatchDate">Soon</p>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="py-12 md:py-20 bg-white/60 border-y border-stone-200">
+
+  <section id="why" class="py-12 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Why Fresh Farm Gur?</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-soft">
+          <h3 class="font-semibold text-lg">Pure & Chemical-Free</h3>
+          <p class="text-stone-600 mt-2">Only sugarcane juice, heat and time. No sulphur, no bleaching agents.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-soft">
+          <h3 class="font-semibold text-lg">Farmer-Owned</h3>
+          <p class="text-stone-600 mt-2">Made on our farms with care. Your purchase supports rural families directly.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-soft">
+          <h3 class="font-semibold text-lg">Fresh Seasonal Batches</h3>
+          <p class="text-stone-600 mt-2">We make in season and ship fast, so your gur arrives fragrant and fresh.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="py-12 md:py-20 bg-white/60 border-y border-stone-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl md:text-4xl font-bold mb-8">Our Products</h2>
       <div class="grid md:grid-cols-3 gap-6">
-        <article class="rounded-2xl overflow-hidden border border-stone-200 bg-white">
-          <img src="/assets/gur-block.jpg" alt="Gur block" class="w-full h-56 object-cover">
+        <article class="rounded-2xl overflow-hidden border border-stone-200 bg-white shadow-soft">
+          <img src="/assets/gur-block.jpg" alt="Solid desi jaggery block" class="w-full h-56 object-cover" loading="lazy">
           <div class="p-5">
             <h3 class="font-semibold text-lg">Desi Gur Block</h3>
             <p class="text-stone-600 mt-1">Classic solid jaggery for cooking & sweets.</p>
             <div class="mt-3 flex items-center justify-between">
-              <span class="font-bold text-earth">₹99/kg</span>
-              <a class="text-sm text-white bg-earth px-3 py-2 rounded-lg" href="https://wa.me/+918859820935?text=I'd%20like%20to%20order%20Desi%20Gur%20Block%20(1kg)">Order</a>
+              <div>
+                <span class="font-bold text-earth text-lg">₹149/kg</span>
+                <span class="ml-2 text-xs bg-green-100 text-green-900 px-2 py-1 rounded">UPI 25% OFF</span>
+              </div>
+              <div class="flex gap-2">
+                <a class="text-sm text-white bg-emerald-600 px-3 py-2 rounded-lg"
+                   href="upi://pay?pa=freshfarmgur@upi&pn=Fresh%20Farm%20Gur&am=149&cu=INR&tn=Desi%20Gur%20Block%201kg%20-%2025%25%20OFF%20applies%20in%20app">Pay via UPI</a>
+                <a class="text-sm text-white bg-earth px-3 py-2 rounded-lg"
+                   href="https://wa.me/918859820935?text=I'd%20like%20to%20order%20Desi%20Gur%20Block%20(1kg)%20with%20Cash%20on%20Delivery">COD</a>
+              </div>
             </div>
           </div>
         </article>
-        <article class="rounded-2xl overflow-hidden border border-stone-200 bg-white">
-          <img src="/assets/gur-powder.jpg" alt="Gur powder" class="w-full h-56 object-cover">
+
+        <article class="rounded-2xl overflow-hidden border border-stone-200 bg-white shadow-soft">
+          <img src="/assets/gur-powder.jpg" alt="Jaggery powder in a bowl" class="w-full h-56 object-cover" loading="lazy">
           <div class="p-5">
             <h3 class="font-semibold text-lg">Gur Powder</h3>
             <p class="text-stone-600 mt-1">Perfect for tea & coffee — dissolves instantly.</p>
             <div class="mt-3 flex items-center justify-between">
-              <span class="font-bold text-earth">₹129/kg</span>
-              <a class="text-sm text-white bg-earth px-3 py-2 rounded-lg" href="https://wa.me/+918859820935?text=I'd%20like%20to%20order%20Gur%20Powder%20(1kg)">Order</a>
+              <div>
+                <span class="font-bold text-earth text-lg">₹179/kg</span>
+                <span class="ml-2 text-xs bg-green-100 text-green-900 px-2 py-1 rounded">UPI 25% OFF</span>
+              </div>
+              <div class="flex gap-2">
+                <a class="text-sm text-white bg-emerald-600 px-3 py-2 rounded-lg"
+                   href="upi://pay?pa=freshfarmgur@upi&pn=Fresh%20Farm%20Gur&am=179&cu=INR&tn=Gur%20Powder%201kg%20-%2025%25%20OFF%20applies%20in%20app">Pay via UPI</a>
+                <a class="text-sm text-white bg-earth px-3 py-2 rounded-lg"
+                   href="https://wa.me/918859820935?text=I'd%20like%20to%20order%20Gur%20Powder%20(1kg)%20with%20Cash%20on%20Delivery">COD</a>
+              </div>
             </div>
           </div>
         </article>
-        <article class="rounded-2xl overflow-hidden border border-stone-200 bg-white">
-          <img src="/assets/gur-chikki.jpg" alt="Peanut chikki" class="w-full h-56 object-cover">
+
+        <article class="rounded-2xl overflow-hidden border border-stone-200 bg-white shadow-soft">
+          <img src="/assets/gur-chikki.jpg" alt="Peanut chikki squares" class="w-full h-56 object-cover" loading="lazy">
           <div class="p-5">
             <h3 class="font-semibold text-lg">Gur Peanut Chikki</h3>
             <p class="text-stone-600 mt-1">Crunchy winter favourite made with our jaggery.</p>
             <div class="mt-3 flex items-center justify-between">
-              <span class="font-bold text-earth">₹149/500g</span>
-              <a class="text-sm text-white bg-earth px-3 py-2 rounded-lg" href="https://wa.me/+918859820935?text=I'd%20like%20to%20order%20Gur%20Peanut%20Chikki%20(500g)">Order</a>
+              <div>
+                <span class="font-bold text-earth text-lg">₹149/500g</span>
+              </div>
+              <div class="flex gap-2">
+                <a class="text-sm text-white bg-emerald-600 px-3 py-2 rounded-lg"
+                   href="https://wa.me/918859820935?text=I'd%20like%20to%20pre-book%20Gur%20Peanut%20Chikki%20(500g)%20via%20UPI">Pre-book</a>
+                <a class="text-sm text-white bg-earth px-3 py-2 rounded-lg"
+                   href="https://wa.me/918859820935?text=I'd%20like%20to%20order%20Gur%20Peanut%20Chikki%20(500g)%20with%20Cash%20on%20Delivery">COD</a>
+              </div>
             </div>
           </div>
         </article>
       </div>
     </div>
   </section>
-  <footer class="py-8 text-center text-sm text-stone-600">
+
+  <section id="process" class="py-12 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">The Process</h2>
+      <ol class="grid md:grid-cols-4 gap-6">
+        <li class="bg-white rounded-2xl p-6 border border-stone-200 shadow-soft">
+          <h3 class="font-semibold">1. Harvest</h3>
+          <p class="text-stone-600 mt-2">Fresh sugarcane cut at dawn for best juice.</p>
+        </li>
+        <li class="bg-white rounded-2xl p-6 border border-stone-200 shadow-soft">
+          <h3 class="font-semibold">2. Crush</h3>
+          <p class="text-stone-600 mt-2">Cane pressed and filtered within hours.</p>
+        </li>
+        <li class="bg-white rounded-2xl p-6 border border-stone-200 shadow-soft">
+          <h3 class="font-semibold">3. Boil & Clarify</h3>
+          <p class="text-stone-600 mt-2">Slow simmer in open pan — no chemicals.</p>
+        </li>
+        <li class="bg-white rounded-2xl p-6 border border-stone-200 shadow-soft">
+          <h3 class="font-semibold">4. Set & Pack</h3>
+          <p class="text-stone-600 mt-2">Cooled, set into blocks and packed hygienically.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="faq" class="py-12 md:py-20 bg-white/60 border-y border-stone-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        <details class="bg-white rounded-2xl p-5 border border-stone-200 shadow-soft">
+          <summary class="font-semibold cursor-pointer">Is your gur healthier than refined sugar?</summary>
+          <p class="mt-2 text-stone-700">Jaggery retains natural minerals like iron, magnesium and potassium that are removed during sugar refining. It’s a better alternative to refined sugar when consumed in moderation. If you have a medical condition (e.g., diabetes), please consult your doctor.</p>
+        </details>
+        <details class="bg-white rounded-2xl p-5 border border-stone-200 shadow-soft">
+          <summary class="font-semibold cursor-pointer">Is it really chemical-free?</summary>
+          <p class="mt-2 text-stone-700">Yes. We use only sugarcane juice and traditional clarification — no sulphur, no bleaching agents.</p>
+        </details>
+        <details class="bg-white rounded-2xl p-5 border border-stone-200 shadow-soft">
+          <summary class="font-semibold cursor-pointer">What about UPI 25% off?</summary>
+          <p class="mt-2 text-stone-700">Paying via UPI gives you an instant 25% discount in your UPI app. If a UPI app doesn’t open, message us on WhatsApp and we’ll send a payment link.</p>
+        </details>
+        <details class="bg-white rounded-2xl p-5 border border-stone-200 shadow-soft">
+          <summary class="font-semibold cursor-pointer">Do you offer Cash on Delivery?</summary>
+          <p class="mt-2 text-stone-700">Yes, COD is available in select pin codes. A small verification message on WhatsApp is required to confirm the order.</p>
+        </details>
+        <details class="bg-white rounded-2xl p-5 border border-stone-200 shadow-soft">
+          <summary class="font-semibold cursor-pointer">How should I store jaggery?</summary>
+          <p class="mt-2 text-stone-700">Keep in an airtight container away from moisture and heat. It can naturally whiten over time due to crystallization — this is normal.</p>
+        </details>
+        <details class="bg-white rounded-2xl p-5 border border-stone-200 shadow-soft">
+          <summary class="font-semibold cursor-pointer">Do you ship across India?</summary>
+          <p class="mt-2 text-stone-700">Yes. We dispatch via trusted couriers. NCR deliveries are batched weekly in season for freshness.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-12 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Talk to the farmer 👋</h2>
+        <p class="text-stone-700">Questions, bulk orders, or society deliveries? Ping us.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a class="inline-flex items-center gap-2 bg-emerald-600 text-white px-4 py-3 rounded-xl hover:bg-emerald-700"
+             href="https://wa.me/918859820935?text=Hi%20Fresh Farm Gur%2C%20I%20have%20a%20question">
+            WhatsApp
+          </a>
+          <a class="inline-flex items-center gap-2 bg-stone-900 text-white px-4 py-3 rounded-xl hover:bg-stone-800"
+             href="https://instagram.com/freshfarmgur" target="_blank" rel="noopener">
+            Instagram
+          </a>
+          <a class="inline-flex items-center gap-2 bg-white border border-stone-300 px-4 py-3 rounded-xl hover:bg-stone-50"
+             href="mailto:hello@freshfarmgur.food">
+            Email
+          </a>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-soft grain">
+        <h3 class="font-semibold text-lg">Wholesale & RWA Inquiries</h3>
+        <p class="text-stone-600 mt-2">We love bulk & society orders. Share your requirements and we’ll get back within a day.</p>
+        <form id="bulkForm" class="mt-4 grid sm:grid-cols-2 gap-3">
+          <input name="name" placeholder="Your name" class="px-4 py-3 rounded-xl border border-stone-200" required>
+          <input name="city" placeholder="City" class="px-4 py-3 rounded-xl border border-stone-200" required>
+          <input name="qty" placeholder="Approx qty (kg)" class="px-4 py-3 rounded-xl border border-stone-200" required>
+          <input name="phone" placeholder="Phone" class="px-4 py-3 rounded-xl border border-stone-200" required>
+          <textarea name="msg" placeholder="Message" class="sm:col-span-2 px-4 py-3 rounded-xl border border-stone-200"></textarea>
+          <button class="sm:col-span-2 bg-earth text-white rounded-xl px-4 py-3 hover:bg-[#6f4724]">Send on WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="py-8 border-t border-stone-200 text-center text-sm text-stone-600">
     © <span id="year"></span> Fresh Farm Gur. Handmade with ♥ in India.
   </footer>
-  <a href="https://wa.me/+918859820935?text=Hi%20I%20want%20to%20order%20Fresh%20Farm%20Gur"
-     class="fixed bottom-5 right-5 bg-emerald-600 p-4 rounded-full hover:bg-emerald-700" aria-label="WhatsApp">
-     <img src="/assets/whatsapp.svg" class="w-6 h-6" alt="">
+
+  <a href="https://wa.me/918859820935?text=Hi%20I%20want%20to%20order%20Fresh Farm Gur"
+     class="fixed bottom-5 right-5 bg-emerald-600 p-4 rounded-full shadow-soft hover:bg-emerald-700" aria-label="WhatsApp">
+     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="white"><path d="M20.52 3.48A11.94 11.94 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.09 1.52 5.8L0 24l6.33-1.66A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.25-6.19-3.48-8.52z"/></svg>
   </a>
+
+  <script>
+    const d = new Date();
+    const day = d.getDay();
+    const diff = (5 - day + 7) % 7 || 7;
+    const nextFri = new Date(d.getTime() + diff*24*60*60*1000);
+    const dd = document.getElementById('dispatchDate'); if(dd) dd.textContent = nextFri.toLocaleDateString('en-IN', { day:'numeric', month:'short' });
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function toWA(params) {
+      const base = "https://wa.me/918859820935?text=";
+      const msg = encodeURIComponent(params);
+      window.location.href = base + msg;
+    }
+
+    document.getElementById('orderForm').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const name = e.target.name.value.trim();
+      const qty = e.target.qty.value.trim();
+      const pay = e.target.pay.value;
+      toWA(`Hi, I'm ${name} and want to pre-book ${qty} kg of Fresh Farm Gur. Payment option: ${pay}.`);
+    });
+
+    document.getElementById('bulkForm').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const f = new FormData(e.target);
+      const parts = [];
+      f.forEach((v,k)=>parts.push(`${k}: ${v}`));
+      toWA("Wholesale/RWA enquiry for Fresh Farm Gur%0A" + parts.join("%0A"));
+    });
+  </script>
 </body>
 </html>
