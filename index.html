@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fresh Farm Gur • Pure Handmade Desi Gur • Farm to Table</title>
+  <meta name="description" content="Pure, handmade desi gur — chemical-free, traditionally crafted from our sugarcane fields and delivered fresh to your home. Pre-book today on WhatsApp.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{gur:'#c27a34',cane:'#76a857',earth:'#8a5a2b'}}}};</script>
+  <link rel="manifest" href="/assets/manifest.webmanifest">
+  <script defer src="/assets/script.js"></script>
+</head>
+<body class="bg-[#fbf7f2] text-stone-800">
+  <header class="sticky top-0 z-50 bg-[#fbf7f2]/90 backdrop-blur border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="#" class="flex items-center gap-3">
+        <img src="/assets/logo.svg" alt="Fresh Farm Gur logo" class="w-9 h-9">
+        <span class="font-semibold text-lg">Fresh Farm Gur</span>
+      </a>
+      <a href="https://wa.me/919999999999?text=Hi%20I%20want%20to%20pre-book%20Fresh%20Farm%20Gur"
+         class="inline-flex items-center gap-2 bg-earth text-white px-4 py-2 rounded-xl hover:bg-[#6f4724]">
+        <img src="/assets/whatsapp.svg" class="w-5 h-5" alt=""> Pre-book
+      </a>
+    </div>
+  </header>
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="text-4xl md:text-6xl font-extrabold">Pure, Handmade <span class="text-earth">Desi Gur</span></h1>
+      <p class="mt-6 text-lg text-stone-700">Traditional jaggery crafted without chemicals from our own sugarcane.</p>
+      <form id="orderForm" class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3 bg-white/70 border border-stone-200 rounded-2xl p-3">
+        <input required name="name" placeholder="Your name" class="px-4 py-3 rounded-xl border border-stone-200" />
+        <input required name="qty" type="number" min="1" step="1" placeholder="Qty (kg)" class="px-4 py-3 rounded-xl border border-stone-200" />
+        <button class="bg-gur text-white rounded-xl px-4 py-3 hover:bg-[#a5652d]">Pre-book on WhatsApp</button>
+      </form>
+      <p class="text-sm text-stone-600 mt-2">No payment now. We confirm on WhatsApp.</p>
+    </div>
+    <div>
+      <img src="/assets/hero.jpg" alt="Handmade desi gur" class="rounded-3xl border border-stone-200">
+    </div>
+  </section>
+  <section class="py-12 md:py-20 bg-white/60 border-y border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Our Products</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="rounded-2xl overflow-hidden border border-stone-200 bg-white">
+          <img src="/assets/gur-block.jpg" alt="Gur block" class="w-full h-56 object-cover">
+          <div class="p-5">
+            <h3 class="font-semibold text-lg">Desi Gur Block</h3>
+            <p class="text-stone-600 mt-1">Classic solid jaggery for cooking & sweets.</p>
+            <div class="mt-3 flex items-center justify-between">
+              <span class="font-bold text-earth">₹99/kg</span>
+              <a class="text-sm text-white bg-earth px-3 py-2 rounded-lg" href="https://wa.me/919999999999?text=I'd%20like%20to%20order%20Desi%20Gur%20Block%20(1kg)">Order</a>
+            </div>
+          </div>
+        </article>
+        <article class="rounded-2xl overflow-hidden border border-stone-200 bg-white">
+          <img src="/assets/gur-powder.jpg" alt="Gur powder" class="w-full h-56 object-cover">
+          <div class="p-5">
+            <h3 class="font-semibold text-lg">Gur Powder</h3>
+            <p class="text-stone-600 mt-1">Perfect for tea & coffee — dissolves instantly.</p>
+            <div class="mt-3 flex items-center justify-between">
+              <span class="font-bold text-earth">₹129/kg</span>
+              <a class="text-sm text-white bg-earth px-3 py-2 rounded-lg" href="https://wa.me/919999999999?text=I'd%20like%20to%20order%20Gur%20Powder%20(1kg)">Order</a>
+            </div>
+          </div>
+        </article>
+        <article class="rounded-2xl overflow-hidden border border-stone-200 bg-white">
+          <img src="/assets/gur-chikki.jpg" alt="Peanut chikki" class="w-full h-56 object-cover">
+          <div class="p-5">
+            <h3 class="font-semibold text-lg">Gur Peanut Chikki</h3>
+            <p class="text-stone-600 mt-1">Crunchy winter favourite made with our jaggery.</p>
+            <div class="mt-3 flex items-center justify-between">
+              <span class="font-bold text-earth">₹149/500g</span>
+              <a class="text-sm text-white bg-earth px-3 py-2 rounded-lg" href="https://wa.me/919999999999?text=I'd%20like%20to%20order%20Gur%20Peanut%20Chikki%20(500g)">Order</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <footer class="py-8 text-center text-sm text-stone-600">
+    © <span id="year"></span> Fresh Farm Gur. Handmade with ♥ in India.
+  </footer>
+  <a href="https://wa.me/919999999999?text=Hi%20I%20want%20to%20order%20Fresh%20Farm%20Gur"
+     class="fixed bottom-5 right-5 bg-emerald-600 p-4 rounded-full hover:bg-emerald-700" aria-label="WhatsApp">
+     <img src="/assets/whatsapp.svg" class="w-6 h-6" alt="">
+  </a>
+</body>
+</html>
